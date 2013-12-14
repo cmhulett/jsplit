@@ -1,6 +1,10 @@
-(ns jsplit.core)
+(ns jsplit.core
+  (:use seesaw.core))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(def main-frame (frame :title "Hello"
+              :content "Hello world."
+              :on-close :exit))
+
+(defn -main [& args]
+  (invoke-later
+  (-> main-frame pack! show!)))
