@@ -4,4 +4,5 @@
   :license {:name "BSD 2-Clause license"
             :url "https://raw.github.com/cmhulett/jsplit/master/LICENSE"}
   :dependencies [[org.clojure/clojure "1.5.1"]
-                 [seesaw "1.4.4"]])
+                 [seesaw "1.4.4"]]
+  :main jsplit.core)
